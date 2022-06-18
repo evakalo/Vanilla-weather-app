@@ -20,6 +20,7 @@ li {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  text-transform: capitalize;
 
   height: 20px;
   line-height: 20px;
@@ -48,10 +49,11 @@ li {
   font-size: 45px;
   line-height: 1;
 }
-.main-image-temp small {
+#units {
   font-size: 15px;
   position: relative;
   top: -20px;
+  left: -5px;
 }
 a {
   text-decoration: none;

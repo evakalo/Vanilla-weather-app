@@ -10,6 +10,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
@@ -18,10 +20,10 @@
       <div class="wrapper">
         <div class="wrapper-border">
           <div class="main-city-date">
-            <h1>Zagreb</h1>
+            <h1 id="city">Zagreb</h1>
             <ul>
               <li>Saturday 11th</li>
-              <li>Clear</li>
+              <li id="description">Clear</li>
             </ul>
           </div>
           <div class="row">
@@ -33,15 +35,16 @@
                   class="float-left"
                 />
                 <span class="float-left temperature">
-                  12<small>°C / <a href="#">°F</a></small>
+                  <span id="temperature">12</span>
+                  <small id="units">°C / <a href="#">°F</a></small>
                 </span>
               </div>
             </div>
             <div class="col-6">
               <ul>
                 <li>Precipitation: 0%</li>
-                <li>Humidity: 39%</li>
-                <li>Wind: 13km/h</li>
+                <li>Humidity: <span id="humidity">39</span>%</li>
+                <li>Wind: <span id="wind"> 13 </span>km/h</li>
               </ul>
             </div>
           </div>
