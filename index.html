@@ -16,25 +16,34 @@
   <body>
     <div class="container">
       <div class="wrapper">
-        <h1>Zagreb</h1>
-        <ul>
-          <li>Saturday 11th</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="partly cloudy"
-            />
-            12°C / °F
-          </div>
-          <div class="col-6">
+        <div class="wrapper-border">
+          <div class="main-city-date">
+            <h1>Zagreb</h1>
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 39%</li>
-              <li>Wind: 13km/h</li>
+              <li>Saturday 11th</li>
+              <li>Clear</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix main-image-temp">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="partly cloudy"
+                  class="float-left"
+                />
+                <span class="float-left temperature">
+                  12 <small>°C / °F</small>
+                </span>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 39%</li>
+                <li>Wind: 13km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small>
@@ -47,6 +56,7 @@
         >
       </div>
     </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
