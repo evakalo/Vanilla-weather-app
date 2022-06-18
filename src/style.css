@@ -42,15 +42,17 @@ li {
 
 .main-image-temp img {
   margin-right: 10px;
-  line-height: 1;
 }
 
 .main-image-temp {
-  font-size: 40px;
+  font-size: 45px;
   line-height: 1;
 }
 .main-image-temp small {
   font-size: 15px;
   position: relative;
-  top: -15px;
+  top: -20px;
+}
+a {
+  text-decoration: none;
 }
