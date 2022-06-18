@@ -34,11 +34,19 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = response.data.wind.speed;
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  console.log(response.data);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey = "87fada2310a69c86ce747c4ec875050c";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let city = "Lisbon";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 console.log(apiUrl);
 
