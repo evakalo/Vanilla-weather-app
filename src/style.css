@@ -28,6 +28,17 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+
+.main-image-temp .active {
+  color: rgb(112, 117, 122);
+  text-decoration: none;
+  cursor: default;
+}
+
+.main-image-temp .active:hover {
+  text-decoration: none;
+}
+
 .wrapper-border {
   padding: 20px;
   border: 1px solid pink;
