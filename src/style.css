@@ -1,11 +1,19 @@
 body {
-  font-family: arial, sans-serif;
+  /* font-family: arial, sans-serif; */
+  font-family: "Raleway", sans-serif;
+  background-color: #4ccaec;
+
+  background-image: url("https://images.pexels.com/photos/6199934/pexels-photo-6199934.jpeg?cs=srgb&dl=pexels-dimitri-weber-6199934.jpg&fm=jpg");
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-  color: pink;
+  color: #ec6e4c;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: bold;
   line-height: 48px;
   margin-bottom: 0;
 }
@@ -41,7 +49,8 @@ li:first-letter {
 
 .wrapper-border {
   padding: 20px;
-  border: 1px solid pink;
+  border: 3px solid #4ccaec;
+  background-color: #ecbe4c;
   border-radius: 5px;
 }
 .wrapper {
@@ -70,4 +79,8 @@ li:first-letter {
 }
 a {
   text-decoration: none;
+  color: #4ccaec;
+}
+small {
+  color: rgb(211, 160, 160);
 }
