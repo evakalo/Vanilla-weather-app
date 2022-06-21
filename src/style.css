@@ -72,6 +72,11 @@ li:first-letter {
   font-size: 45px;
   line-height: 1;
 }
+
+img {
+  display: inline;
+}
+
 #units {
   font-size: 15px;
   position: relative;
@@ -84,4 +89,16 @@ a {
 }
 small {
   color: rgb(211, 160, 160);
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.forecast-days {
+  color: rgb(112, 98, 98);
+  font-size: 16px;
+}
+
+.forecast-temperature-min {
+  opacity: 0.7;
 }

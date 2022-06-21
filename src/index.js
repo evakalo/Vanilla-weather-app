@@ -22,6 +22,36 @@ function formatDate(timestamp) {
   return `${day} ${hours} : ${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+               <div class="col-2">
+                <div class="forecast-days">
+                  ${day} </div>
+                 
+                   <img
+                     src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png"
+                    alt=""
+                    width="42"
+                   />
+                 
+                 <div class="forecast-degrees">
+                     <span class="forecast-temperature-max">28</span>/
+                    <span class="forecast-temperature-min">12</span>
+                  </div>
+                </div>
+
+          `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   celsiusTemperature = response.data.main.temp;
@@ -71,6 +101,7 @@ function showFahrenheit(event) {
 }
 
 let celsiusTemperature = null;
+displayForecast();
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheit);
