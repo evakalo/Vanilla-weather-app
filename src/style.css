@@ -103,12 +103,11 @@ small {
 }
 .forecast-per-day {
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .forecast-temperature-min {
   opacity: 0.7;
 }
 .forecast-temperature-max {
-  padding-right: 1px;
   opacity: 0.9;
 }
