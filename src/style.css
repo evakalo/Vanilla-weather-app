@@ -83,6 +83,7 @@ img {
   position: relative;
   top: -20px;
   left: -5px;
+  color: black;
 }
 a {
   text-decoration: none;
@@ -106,4 +107,8 @@ small {
 }
 .forecast-temperature-min {
   opacity: 0.7;
+}
+.forecast-temperature-max {
+  padding-right: 1px;
+  opacity: 0.9;
 }
