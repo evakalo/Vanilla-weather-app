@@ -86,10 +86,14 @@ img {
 }
 a {
   text-decoration: none;
-  color: #4ccaec;
+  color: #ecbe4c;
+}
+
+a:hover {
+  color: rgb(235 219 179);
 }
 small {
-  color: rgb(211, 160, 160);
+  color: rgb(255, 253, 253);
 }
 .weather-forecast {
   text-align: center;
