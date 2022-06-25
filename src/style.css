@@ -1,5 +1,4 @@
 body {
-  /* font-family: arial, sans-serif; */
   font-family: "Raleway", sans-serif;
   background-color: black;
 
@@ -51,7 +50,7 @@ li:first-letter {
 .wrapper-border {
   padding: 20px;
   border: 3px solid #ecbe4c;
-  background-color: rgba(236, 190, 76, 0.8);
+  background-color: rgb(235 219 179);
   border-radius: 10px;
   width: 600px;
 }
